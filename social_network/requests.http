@@ -1,0 +1,33 @@
+GET http://127.0.0.1:8000/post/
+Authorization: Token 9561ed5d3053d9c5749cea2afee6da5be922df99
+
+###
+
+POST http://127.0.0.1:8000/post/
+Content-Type: application/json
+Authorization: Token 9561ed5d3053d9c5749cea2afee6da5be922df99
+
+{
+    "user": 1,
+    "post_text": "dddddd",
+    "image": "https://ru.pinterest.com/pin/700802392043046586/"
+}
+
+###
+
+GET http://127.0.0.1:8000/post/7/
+Authorization: Token 9561ed5d3053d9c5749cea2afee6da5be922df99
+
+###
+
+PATCH http://127.0.0.1:8000/post/3/
+Content-Type: application/json
+
+{
+    "post_text": "post number 3"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/post/7/
+Authorization: Token 9561ed5d3053d9c5749cea2afee6da5be922df99
